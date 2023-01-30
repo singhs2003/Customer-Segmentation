@@ -20,7 +20,7 @@ def main():
     
 
     #image = Image.open('Cluster.jpg')
-    st.image(image, caption='This is The Spending Habit. You can See Yours')
+    #st.image(image, caption='This is The Spending Habit. You can See Yours')
     if st.button('Predict'):
         pred=model.predict([[p1,p2]])
         st.success('You Lie In Cluster Or Group {}'.format(pred[0]))
