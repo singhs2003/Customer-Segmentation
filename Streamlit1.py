@@ -19,7 +19,7 @@ def main():
     p2=st.slider('Enter Your Spending Score ',0,100)
     
 
-    image = Image.open('Cluster.jpg')
+    image = Image.open('https://ibb.co/rv9yFKm')
     st.image(image, caption='This is The Spending Habit. You can See Yours')
     
     if st.button('Predict'):
