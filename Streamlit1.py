@@ -19,8 +19,9 @@ def main():
     p2=st.slider('Enter Your Spending Score ',0,100)
     
 
-    image = Image.open('https://www.linkpicture.com/q/Cluster.jpg')
+    image = Image.open('Cluster.jpg')
     st.image(image, caption='This is The Spending Habit. You can See Yours')
+    
     if st.button('Predict'):
         pred=model.predict([[p1,p2]])
         st.success('You Lie In Cluster Or Group {}'.format(pred[0]))
